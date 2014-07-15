@@ -15,12 +15,15 @@
 |
 */
 
-Route::get('/hello', function()
+Route::get('/', function()
 {
+
 	return View::make('hello');
 });
 
-Route::get('/app', function()
+Route::get('/show_env', function()
 {
-    return 'ok';
+    echo  '环境:' ,App::environment(), '-----是否开启debug:', true === Config::get('app.debug')? '是':'否' , '---------';
+    echo '<br>';
+    return ; 
 });
