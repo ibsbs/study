@@ -270,3 +270,17 @@ Stack trace:
 #11 E:\wamp\www\laravel-cn\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(606): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
 #12 E:\wamp\www\laravel-cn\public\index.php(63): Illuminate\Foundation\Application->run()
 #13 {main} [] []
+[2014-07-15 16:42:48] production.ERROR: exception 'InvalidArgumentException' with message 'Command "key:genreate" is not defined.
+
+Did you mean this?
+    key:generate' in E:\wamp\www\laravel-cn\vendor\symfony\console\Symfony\Component\Console\Application.php:562
+Stack trace:
+#0 E:\wamp\www\laravel-cn\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('key:genreate')
+#1 E:\wamp\www\laravel-cn\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 E:\wamp\www\laravel-cn\artisan(59): Symfony\Component\Console\Application->run()
+#3 {main} [] []
+[2014-07-15 16:51:46] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined method Illuminate\Foundation\Application::enviroment()' in E:\wamp\www\laravel-cn\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php:205
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-07-15 16:59:20] production.ERROR: Debugbar exception: include(E:\wamp\www\laravel-cn\vendor/symfony/finder/Symfony/Component/Finder/Finder.php): failed to open stream: No such file or directory [] []

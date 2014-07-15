@@ -32,11 +32,15 @@ $app = new Illuminate\Foundation\Application;
 |
 */
 
-$env = $app->detectEnvironment(array(
+// $env = $app->detectEnvironment(array(
 
-	'local' => array('your-machine-name'),
+// 	'local' => array('your-machine-name'),
 
-));
+// ));
+$env = $app->detectEnvironment(function()
+{
+    return $_SERVER['MY_LARAVEL_ENV'];
+});
 
 /*
 |--------------------------------------------------------------------------
