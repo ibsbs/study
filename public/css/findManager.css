@@ -1,0 +1,9 @@
+<!--
+html{height:100%;overflow:hidden;}
+.header,.content{position:absolute;}
+.header{ height:128px; left:0; top:0; right:0;}
+.content{ left:0; right:0; top:128px; bottom:70px;;}
+-->
+body,div,ul,li,a{ margin:0; padding:0;}
+a{text-decoration: none;}
+.wrap{height: 100%;}

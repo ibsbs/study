@@ -29,3 +29,29 @@ Route::get('/show_env', function()
     echo '</pre>';
     return ; 
 });
+
+Route::group(array('prefix'=>'user', 'before'=>'isLogin'), function() {
+    Route::get('name/{name}', function($name) {
+        $string = "我的名字是 -- {$name}";
+        echo $string;
+        return;
+    })->where(array('name'=>'[a-zA-Z]+'));
+    Route::get('id/{id}', array(function($id) {
+        $string = "我的id号是 -- {$id}";
+        echo $string;
+        return;
+    }))->where(array('id'=>'[0-9]+'));
+});
+
+Route::filter('isLogin', function() {
+    if(Session::get('userId', 0) === 0) {
+        return '对不起,请登录<a href="http://www.baidu.com">百度</a>';
+    }
+});
+
+// Route::controller('/admin', 'Admin\MyHomeController');
+
+
+Route::group(array('prefix'=>'admin'), function() {
+    Route::controller('my_home', 'Admin\MyHomeController');
+});
