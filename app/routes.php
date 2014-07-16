@@ -54,4 +54,12 @@ Route::filter('isLogin', function() {
 
 Route::group(array('prefix'=>'admin'), function() {
     Route::controller('my_home', 'Admin\MyHomeController');
+    Route::controller('post', 'Admin\PostController');
 });
+
+
+
+
+
+
+
