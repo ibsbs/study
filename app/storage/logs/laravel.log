@@ -495,3 +495,19 @@ Stack trace:
 #1 {main} [] []
 [2014-07-15 16:59:20] production.ERROR: Debugbar exception: include(E:\wamp\www\laravel-cn\vendor/symfony/finder/Symfony/Component/Finder/Finder.php): failed to open stream: No such file or directory [] []
 >>>>>>> 70d71feb15ca561af9e7d50d445215d1b3e988b1
+[2014-07-16 13:35:30] local.ERROR: Debugbar exception: include(E:\wamp\www\laravel-cn\vendor/symfony/finder/Symfony/Component/Finder/Finder.php): failed to open stream: No such file or directory [] []
+[2014-07-16 13:40:31] local.ERROR: exception 'ErrorException' with message 'include(E:\wamp\www\laravel-cn\vendor/symfony/finder/Symfony/Component/Finder/Finder.php): failed to open stream: No such file or directory' in E:\wamp\www\laravel-cn\vendor\composer\ClassLoader.php:269
+Stack trace:
+#0 E:\wamp\www\laravel-cn\vendor\composer\ClassLoader.php(269): Illuminate\Exception\Handler->handleError(2, 'include(E:\wamp...', 'E:\wamp\www\lar...', 269, Array)
+#1 E:\wamp\www\laravel-cn\vendor\composer\ClassLoader.php(269): Composer\Autoload\ClassLoader::loadClass()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('Symfony\Compone...')
+#3 E:\wamp\www\laravel-cn\vendor\laravel\framework\src\Illuminate\Session\FileSessionHandler.php(87): spl_autoload_call('Symfony\Compone...')
+#4 E:\wamp\www\laravel-cn\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(159): Illuminate\Session\FileSessionHandler->gc(7200)
+#5 E:\wamp\www\laravel-cn\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(128): Illuminate\Session\Middleware->collectGarbage(Object(Illuminate\Session\Store))
+#6 E:\wamp\www\laravel-cn\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(79): Illuminate\Session\Middleware->closeSession(Object(Illuminate\Session\Store))
+#7 E:\wamp\www\laravel-cn\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#8 E:\wamp\www\laravel-cn\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#9 E:\wamp\www\laravel-cn\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#10 E:\wamp\www\laravel-cn\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(606): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#11 E:\wamp\www\laravel-cn\public\index.php(63): Illuminate\Foundation\Application->run()
+#12 {main} [] []

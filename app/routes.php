@@ -23,7 +23,9 @@ Route::get('/', function()
 
 Route::get('/show_env', function()
 {
+    echo '<pre>';
     echo  '环境:' ,App::environment(), '-----是否开启debug:', true === Config::get('app.debug')? '是':'否' , '---------';
-    echo '<br>';
+    print_r(Config::get('database.connections')); 
+    echo '</pre>';
     return ; 
 });

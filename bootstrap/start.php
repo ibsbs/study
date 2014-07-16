@@ -39,7 +39,7 @@ $app = new Illuminate\Foundation\Application;
 // ));
 $env = $app->detectEnvironment(function()
 {
-    return $_SERVER['MY_LARAVEL_ENV'];
+    return !empty($_SERVER['APP_ENV'])?$_SERVER['APP_ENV']:'production';
 });
 
 /*

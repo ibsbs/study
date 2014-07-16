@@ -13,6 +13,6 @@ return array(
 	|
 	*/
 
-	'debug' => $_SERVER['DEBUG'],
+	'debug' => $_SERVER['APP_DEBUG'],
 
 );
