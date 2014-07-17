@@ -4,12 +4,12 @@ namespace Admin;
 use \Post;
 class PostController extends \Controller
 {
-    public function getCreate()
+    public function getCreate($id)
     {
         $post = new Post();
         $post->title = 'hello world';
         $post->content = '文章内容';
-        $post->user_id = 1;
+        $post->user_id = $id;
         $post->save();
 
         return '添加文章成功';

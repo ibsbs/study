@@ -2300,3 +2300,23 @@ Stack trace:
 #11 /Users/yangbo-webkaifa/Sites/laravel_cn/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(606): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
 #12 /Users/yangbo-webkaifa/Sites/laravel_cn/public/index.php(63): Illuminate\Foundation\Application->run()
 #13 {main} [] []
+[2014-07-18 00:58:18] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '；' (T_STRING)' in /Users/yangbo-webkaifa/Sites/laravel_cn/app/controllers/Admin/UserController.php:9
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-07-18 00:59:00] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '；' (T_STRING)' in /Users/yangbo-webkaifa/Sites/laravel_cn/app/controllers/Admin/UserController.php:11
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-07-18 00:59:16] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Admin\Hasd' not found' in /Users/yangbo-webkaifa/Sites/laravel_cn/app/controllers/Admin/UserController.php:12
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-07-18 01:00:00] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Admin\Hasd' not found' in /Users/yangbo-webkaifa/Sites/laravel_cn/app/controllers/Admin/UserController.php:12
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-07-18 01:00:15] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Admin\Hasd' not found' in /Users/yangbo-webkaifa/Sites/laravel_cn/app/controllers/Admin/UserController.php:12
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
