@@ -2,6 +2,7 @@
 namespace Admin;
 
 use \Post;
+use \View;
 class PostController extends \Controller
 {
     public function getCreate($id)
@@ -31,4 +32,22 @@ class PostController extends \Controller
 
         return '删除成功';
     }
+    public function getShow($id=1)
+    {
+        $post = Post::find($id);
+        echo '<pre>';
+        print_r($post->toArray());
+        echo '</pre>';
+        die;
+        return View::make('admin.post-detail')->withPost($post);
+    }
+
+    public function getList()
+    {
+        $posts = Post::get();
+        //$posts = Post::with('user')->get();
+        return View::make('admin.post-list')->withPosts($posts);
+    }
+
+
 }
