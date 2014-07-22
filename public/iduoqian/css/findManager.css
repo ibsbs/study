@@ -1,0 +1,33 @@
+.content_img{
+    height: 336px;
+    width: 100%;
+    margin-top: 87px;
+}
+.content{
+    margin: 0 auto;
+    width:100%;
+    background: #f6f7f9;
+}
+.content_input{
+    width: 1000px;
+    margin: 0 auto;
+}
+.content_san{margin-top: 33px;}
+.input_in{
+    width: 486px;
+    height: 47px;
+    outline: none;
+    border: 2px solid #ffa308;
+    /*margin-top: -4px;*/
+}
+.input_but{
+    width: 80px;
+    height: 50px;
+    outline: none;
+    border: none;
+    /*border: 2px solid #ffa308;*/
+    background: #ffa308;
+    color: #fff;
+    margin-left: -4px;
+    font-size: 20px;
+}

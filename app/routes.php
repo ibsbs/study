@@ -58,6 +58,13 @@ Route::group(array('prefix'=>'admin'), function() {
     Route::controller('user', 'Admin\UserController');
 });
 
+#################多钱网项目路由###################
+
+Route::group(array('prefix'=>'iduoqian'), function() {
+    Route::get('index', 'Iduoqian\IndexController@showIndex');
+});
+
+################################################
 
 
 
