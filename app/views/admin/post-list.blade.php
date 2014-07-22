@@ -1,4 +1,5 @@
 @foreach($posts as $post)
+@{{'<a href="www.baidu.com">' . $post->title . '</a>'}}
 <h3>文章标题:{{$post->title}}</h3>
 <h4>内容:{{$post->content}}</h4>
 <h4>创建时间:{{$post->created_at}}</h4>

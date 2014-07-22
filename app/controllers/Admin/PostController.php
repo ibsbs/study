@@ -44,8 +44,8 @@ class PostController extends \Controller
 
     public function getList()
     {
-        $posts = Post::get();
-        //$posts = Post::with('user')->get();
+        //$posts = Post::get();
+        $posts = Post::with('user')->get();
         return View::make('admin.post-list')->withPosts($posts);
     }
 
