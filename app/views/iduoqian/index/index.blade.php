@@ -5,17 +5,17 @@
    <div class="content">
        <div id="huandengpian">
            <div class="inner">
-               <img src="images/bj1.jpg" alt=""/>
-               <img src="images/bj2.jpg" alt=""/>
-               <img src="images/bj3.jpg" alt=""/>
-               <img src="images/bj4.jpg" alt=""/>
+               <img src="{{asset('iduoqian')}}/images/bj1.jpg" alt=""/>
+               <img src="{{asset('iduoqian')}}/images/bj2.jpg" alt=""/>
+               <img src="{{asset('iduoqian')}}/images/bj3.jpg" alt=""/>
+               <img src="{{asset('iduoqian')}}/images/bj4.jpg" alt=""/>
            </div>
            <div class="next">></div>
            <div class="prev"><</div>
        </div>
        <div class="neirong">
            <div id="neirong_tanchu">
-               <img class="logo_main" src="images/logo_m.png" alt=""/>
+               <img class="logo_main" src="{{asset('iduoqian')}}/images/logo_m.png" alt=""/>
                <ul class="content_ul">
                    <li>
                        <div class="content_btn" id="wudiya">无抵押信用贷款</div>
@@ -108,27 +108,27 @@
                    </ul>
                </div>
            </div>
-           <div class="content_tu"><img src="images/start.png" alt=""/></div>
+           <div class="content_tu"><img src="{{asset('iduoqian')}}/images/start.png" alt=""/></div>
        </div>
        <!--弹出层区域-->
        <div class="tanchu">
-           <div class="img"><img src="images/tanchu1.jpg" alt=""/></div>
+           <div class="img"><img src="{{asset('iduoqian')}}/images/tanchu1.jpg" alt=""/></div>
            <div class="tanchu_div">
                <ul>
                    <li>
-                       <img src="images/tanchu01.png" alt="" />
+                       <img src="{{asset('iduoqian')}}/images/tanchu01.png" alt="" />
                        <div class="tanchu_icon">
                            <a href=""><i class="fa fa-home home"></i><p class="manager">找机构</p></a>
                        </div>
                    </li>
                    <li>
-                       <img src="images/tanchu02.png" alt=""/>
+                       <img src="{{asset('iduoqian')}}/images/tanchu02.png" alt=""/>
                        <div class="tanchu_icon">
                            <a href=""><i class="fa fa-user user"></i><p class="manager">找经理</p></a>
                        </div>
                    </li>
                    <li>
-                       <img src="images/tanchu03.png" alt="">
+                       <img src="{{asset('iduoqian')}}/images/tanchu03.png" alt="">
                        <div class="tanchu_icon">
                            <a href=""><i class="fa fa-calendar calendar"></i><p class="manager">计算器</p></a>
                        </div>
@@ -136,10 +136,10 @@
                </ul>
                <div class="tanchu_dai">
                    <ul>
-                       <li><img src="images/tanchu04.png" alt=""/></li>
-                       <li><img src="images/tanchu05.png" alt=""/></li>
-                       <li><img src="images/tanchu06.png" alt=""/></li>
-                       <li><img src="images/tanchu07.png" alt=""/></li>
+                       <li><img src="{{asset('iduoqian')}}/images/tanchu04.png" alt=""/></li>
+                       <li><img src="{{asset('iduoqian')}}/images/tanchu05.png" alt=""/></li>
+                       <li><img src="{{asset('iduoqian')}}/images/tanchu06.png" alt=""/></li>
+                       <li><img src="{{asset('iduoqian')}}/images/tanchu07.png" alt=""/></li>
                    </ul>
                </div>
                <div class="tanchu_word">
@@ -159,7 +159,7 @@
                    </ul>
                </div>
            </div>
-           <div class="img_hidden"><img src="images/hidden.png" alt=""/></div>
+           <div class="img_hidden"><img src="{{asset('iduoqian')}}/images/hidden.png" alt=""/></div>
        </div>
    </div>
 
@@ -262,3 +262,9 @@
 </script>
 
 @stop
+
+@section('test')
+##########
+@stop
+
+

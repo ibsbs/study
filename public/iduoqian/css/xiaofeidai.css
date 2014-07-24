@@ -1,0 +1,108 @@
+.content_img{
+    height: 336px;
+    width: 100%;
+    margin-top: 95px;
+}
+.content{
+    background: #f0f0f0;
+}
+.content_all{
+    width: 1200px;
+    height: 1200px;
+    margin: 0 auto;
+}
+
+.content_left{
+    width: 900px;
+    height: 1200px;
+    /*border: 1px solid brown;*/
+}
+.content_right{
+    width: 290px;
+    height: 700px;
+    border: 1px solid blue;
+    float: right;
+    margin-top: -1202px;
+}
+.content_nav{
+    height: 90px;
+    width: 900px;
+}
+.content_nav li{float:left;list-style: none;margin-right: 2px;}
+.left_nav{
+    width: 176px;
+    height: 50px;
+    background: #f6f7f9;
+    border: 1px solid #f6f7f9;
+    line-height: 50px;
+    text-align: center;
+    /*border-top: 2px solid #ffa308;*/
+    margin-top: 10px;
+}
+.content_wen{
+    height: 360px;
+    background: #fff;
+    border: 1px solid #000000;
+    margin-top: -5px;
+}
+.content_wen>ul{margin-left: 13px;}
+.content_wen>ul>li{
+    float: left;
+    list-style: none;
+    margin-right: 13px;
+    background: #fff;
+
+}
+.content_word{
+    height: 180px;
+    margin-top: 220px;
+}
+.content_title>ul{
+    margin: 10px 0 0 35px;
+}
+.content_title>ul>li{
+    float: left;
+    list-style: none;
+}
+.content_title li:first-child{
+    margin-right: 120px;
+}
+.content_title li:last-child{
+    margin-left: 100px;
+}
+.content_title a{color: #000;}
+.content_xi{
+    height: 110px;
+    border-bottom: 1px solid #e7e6e4;
+    margin-top: 40px;
+}
+.content_xi>ul>li{
+    float: left;
+    list-style: none;
+    width: 265px;
+}
+.content_xi li:first-child{
+    margin-right: 30px;
+}
+.content_xi li:last-child{
+    margin-left: 30px;
+}
+.content_xi a{
+    color: #000;
+    font-size: 12px;
+    text-indent: 2em;
+    padding-left:2em
+}
+.content_find>ul{margin-left: 178px;}
+.content_find>ul>li{
+    float: left;
+    list-style: none;
+    margin-top: 30px;
+}
+.content_find a{color: #20a2e8;}
+.content_find li:first-child{
+    margin-right: 200px;
+}
+.content_find li:last-child{
+    margin-left: 200px;
+}

@@ -60,8 +60,9 @@ Route::group(array('prefix'=>'admin'), function() {
 
 #################多钱网项目路由###################
 
-Route::group(array('prefix'=>'iduoqian'), function() {
+Route::group(array('prefix'=>'iduoqians'), function() {
     Route::get('index', 'Iduoqian\IndexController@showIndex');
+    Route::get('gonglue', 'Iduoqian\GongLueController@showIndex');
 });
 
 ################################################

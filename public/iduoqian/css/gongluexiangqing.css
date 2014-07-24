@@ -1,10 +1,10 @@
 .bg{background: #f0f0f0;width: 100%;}
 .content_img{
-    height: 336px;
+    height: 200px;
     margin-top: 95px;
 }
 .content_img img{
-    height: 336px;
+    height: 200px;
     width: 100%;
 }
 .content{
@@ -12,9 +12,9 @@
     margin: 0 auto;
 }
 .content_left{
-   width: 900px;
-    height: 1280px;
+    width: 900px;
     margin-top: 10px;
+    margin-bottom: 50px;
 }
 .left_top{
     height: 52px;
@@ -28,6 +28,10 @@
     margin-right: 15px;
     color: #999999;
     line-height: 52px;
+    font-size: 12px;
+}
+.left_top a{
+    color: #999999;
     font-size: 12px;
 }
 .content_nav{
@@ -54,6 +58,8 @@
     height: 470px;
     width: 900px;
     margin-top: -25px;
+    border: 1px solid #fff;
+    background: #fff;
 }
 .left_xi{
     width: 790px;
@@ -71,8 +77,9 @@ h6{text-align: center;color: #666666;margin-top: 10px;margin-left: -20px;}
     margin-top: 5px;
 }
 .left_wz{
-    height: 230px;
+    height: 240px;
     width: 900px;
+    background: #fff;
 }
 h3{margin-left: 35px;}
 .left_text{
@@ -97,8 +104,8 @@ h3{margin-left: 35px;}
 .left_wz img{margin-left: 400px;margin-top: -20px;}
 .left_lun{
     width: 900px;
-    height: 390px;
-    margin-top: 10px;
+    height: 395px;
+    background: #fff;
 }
 .lun_one{
     width: 800px;
@@ -130,7 +137,7 @@ h3{margin-left: 35px;}
     width: 630px;
     height: 95px;
     margin-left: 200px;
-    background: #fff;
+    background: #f8f8f8;
     margin-bottom: 10px;
 }
 .lun_h{
@@ -161,7 +168,7 @@ h3{margin-left: 35px;}
 .content_right{
     width: 290px;
     float: right;
-    margin-top: -1290px;
+    margin-top: -1295px;
 }
 .right_div{
     width: 290px;
