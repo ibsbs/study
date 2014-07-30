@@ -15,6 +15,7 @@
     width: 900px;
     margin-top: 10px;
     margin-bottom: 50px;
+    float: left;
 }
 .left_top{
     height: 52px;
@@ -55,7 +56,6 @@
     cursor: pointer;
 }
 .left_xiang{
-    height: 470px;
     width: 900px;
     margin-top: -25px;
     border: 1px solid #fff;
@@ -63,7 +63,6 @@
 }
 .left_xi{
     width: 790px;
-    height: 380px;
     margin-top: 20px;
     margin-left: 30px;
 }
@@ -80,8 +79,10 @@ h6{text-align: center;color: #666666;margin-top: 10px;margin-left: -20px;}
     height: 240px;
     width: 900px;
     background: #fff;
+    padding-top: 10px;
+
 }
-h3{margin-left: 35px;}
+h3{margin-left: 35px;margin-top: 10px}
 .left_text{
     height: 117px;
     width: 800px;
@@ -111,7 +112,6 @@ h3{margin-left: 35px;}
     width: 800px;
     height: 135px;;
     margin-left: 35px;
-    margin-top: 10px;
 }
 .lun_one>ul{margin-top: -55px;margin-left: 55px;margin-bottom: 40px;}
 .lun_one>ul>li{
@@ -168,7 +168,6 @@ h3{margin-left: 35px;}
 .content_right{
     width: 290px;
     float: right;
-    margin-top: -1295px;
 }
 .right_div{
     width: 290px;

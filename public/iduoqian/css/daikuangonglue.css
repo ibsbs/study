@@ -13,6 +13,7 @@
 }
 .content_left{
     width: 900px;
+    float: left;
 }
 .content_nav{
     height: 90px;
@@ -29,6 +30,7 @@
     margin-top: 10px;
 }
 .left_nav:hover{
+    border-top: 2px solid #ffa308;
     background: #fff;
     border-bottom-color: #fff;
     cursor: pointer;
@@ -58,7 +60,7 @@
 .page_one:hover,.page_two:hover,.page_three:hover,.page_all:hover{
     background: #4196e6;
     cursor: pointer;
-    border: none;
+    border: 1px solid #fff;
 }
 .page_two{
     width: 30px;
@@ -99,6 +101,7 @@
     margin-top: -27px;
     margin-left:800px;
     text-align: center;
+    border: none
 }
 .left_down button{
     border: 1px solid #cccccc;
@@ -226,7 +229,6 @@
 .content_right{
     width: 290px;
     float: right;
-    margin-top: -1442px;
 }
 .right_div{
     width: 290px;

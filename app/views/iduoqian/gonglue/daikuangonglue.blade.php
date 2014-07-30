@@ -1,14 +1,11 @@
-@extends('iduoqian.layouts.master')
+@extends('iduoqian.layouts.master_has_footer')
 @section('head')
   @parent
  <link rel="stylesheet" href="{{asset('iduoqian')}}/css/footerCommon.css"/>
   <link rel="stylesheet" href="{{asset('iduoqian')}}/css/daikuangonglue.css"/>
 @stop
-@section('banner')
 
 @section('content')
-<!--内容区域-->
-<div class="bg">
 <div class="content_img">
     <img src="{{asset('iduoqian')}}/images/xiaofei.jpg" alt=""/>
 </div>
@@ -184,6 +181,21 @@
             </div>
             <div class="right_re">
                 <p class="right_p"><span class="right_sp">|</span>热门TAG</p><br />
+                 <style>
+            .ad1{left:0px;top:27px;}
+            .ad2{left:0px;top:80px;}
+            .ad3{left:47px;top:0px;}
+            .ad4{left:47px;top:53px;}
+            .ad5{left:47px;top:106px;}
+            .ad6{left:94px;top:27px;}
+            .ad7{left:94px;top:80px;}
+            .ad8{left:94px;top:133px;}
+            .ad9{left:141px;top:0px;}
+            .ad10{left:141px;top:53px;}
+            .ad11{left:141px;top:106px;}
+            .ad12{left:188px;top:27px;}
+            .ad13{left:188px;top:80px;}
+        </style>
                 <div class="right_img">
                     <div id="tags-layout"></div>
                 </div>
@@ -216,8 +228,22 @@
         </div>
     </div>
 </div>
-@include('iduoqian.footer')
+@stop
 
-</div>
+@section('add')
+<!--<script src="js/layout.js"></script>-->
+<script type="text/javascript">
+//    回到顶部
+    function scollmove(){
+        var tempwindow =  $(window)
+        var aniid = setInterval(function(){
+            var tempheight = tempwindow.scrollTop();
+            tempwindow.scrollTop(tempheight/2);
+            if(tempheight<=2){
+                clearInterval(aniid);
+            }
+        },100);
+    }
 
+</script>
 @stop

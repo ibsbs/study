@@ -7,7 +7,7 @@
 <body>
 <!--头部区域-->
   @yield('banner')
-  @yield('content')
+  @yield('contents')
 </body>
 
 </html>

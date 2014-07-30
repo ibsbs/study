@@ -3,7 +3,6 @@
     margin: 0 auto;
     margin-top: 87px;
 }
-.content_all{}
 #huandengpian{
     width: 100%;
     height: 856px;
@@ -59,6 +58,7 @@
     position: absolute;
     left:660px;
     top:420px;
+    width: 650px;
 }
 .content_ul li{
     margin-right: 10px;
@@ -91,6 +91,7 @@
     left:245px;
     bottom:10px;
 }
+.content_foot>ul{width: 280px;}
 .content_foot li{
     margin-right: 10px;
     float: left;
@@ -135,24 +136,45 @@
     position: absolute;
     top:90px;
 }
+.zhonglei{width:265px;position:relative;left:30px;top:10px;}
+.two{width:265px; height:40px; line-height:40px; padding-left:20px; padding-right:10px;
+    border: 1px solid #7ea800;
+    color: #999999; cursor:pointer;background: #fff;}
+.top_three{height: 40px;width: 35px;margin-left: 260px;margin-top: -41px;text-align: center;background: #f1f1f1;cursor: pointer;}
+.right{font-size: 25px;line-height: 30px;color: #656565;}
+.zhonglei ul{width:295px; background: #fdfdfd; margin-top:-1px; border:1px solid #999999;
+    position:absolute;display: none; height: 150px;z-index: 1000;}
+.zhonglei ul li{line-height:30px;list-style: none;cursor: pointer;width: 290px;padding-left: 5px;}
+.zhonglei ul li:hover{ background: #ededed;}
+#jin_qian{width:265px;position:relative;left:30px;top:20px;}
+.jigou{width:265px;position:relative;left:30px;top:10px;}
+.three{width:265px; height:40px; line-height:40px; padding-left:20px; padding-right:10px;
+    border: 1px solid #7ea800;background: #fff;
+    color: #999999; cursor:pointer}
+.top_one{height: 40px;width: 35px;margin-left: 260px;margin-top: -41px;text-align: center;background: #f1f1f1;cursor: pointer;}
+.right{font-size: 25px;line-height: 30px;color: #656565;}
+.jigou ul{width:295px; background: #fdfdfd; margin-top:-1px; border:1px solid #999999;
+    position:absolute;display: none; height: 120px;z-index: 1000;}
+.jigou ul li{line-height:30px;list-style: none;cursor: pointer;width: 290px;padding-left: 5px;}
+.jigou ul li:hover{ background: #ededed;}
+
+.qixian{width:265px;position:relative;left:30px;top:30px;}
+.four{width:265px; height:40px; line-height:40px; padding-left:20px; padding-right:10px;
+    border: 1px solid #7ea800;
+    color: #999999; cursor:pointer;background: #fff;}
+.top_two{height: 40px;width: 35px;margin-left: 260px;margin-top: -41px;text-align: center;background: #f1f1f1;cursor: pointer;}
+.right{font-size: 25px;line-height: 30px;color: #656565;}
+.qixian ul{width:295px; background: #fdfdfd; margin-top:-1px; border:1px solid #999999;
+    position:absolute;display: none; height: 240px;}
+.qixian ul li{line-height:30px;list-style: none;cursor: pointer;width: 290px;padding-left: 5px;}
+.qixian ul li:hover{ background: #ededed;}
 .content_hidden{display: none;}
 .content_show{display: none;}
-.content_select option{border-color:#fff;}
-.content_select{
-    width: 300px;
-    height: 40px;
-    outline: none;
-    border: 1px solid #7ea800;
-    color: #999999;
-    line-height: 40px;
-    margin-top: 10px;
-    margin-left: 30px;
-    font-size: 15px;
-}
+
 .content_but{
     width: 300px;
     height: 40px;
-    margin-top: 10px;
+    margin-top: 48px;
     margin-left: 30px;
     font-size: 15px;
     color: #fff;
@@ -194,14 +216,14 @@
 .img img{width: 100%;height: 342px;}
 .tanchu_div{
     width: 100%;
-    height: 522px;
+    height: 519px;
     display: block;
     background: #2f4158;
     position: absolute;
     top:460px;
     left: 0px;
 }
-.tanchu_div ul{margin-left: 350px;}
+.tanchu_div ul{margin-left: 350px;width: 1220px;}
 .tanchu_div li{
     list-style: none;
     display: inline;
@@ -234,5 +256,5 @@
 .tanchu_wordli ul{margin-left: 450px;margin-top: 340px;}
 .tanchu_wordli li{list-style: none;display: inline;margin-right:202px;}
 .tanchu_wordli a{color: #fff;font-size: 15px;}
-.img_hidden img{position: fixed;bottom: 1px;left: 865px;overflow: hidden;}
+.img_hidden img{position: fixed;bottom: 1px;left: 865px;}
 

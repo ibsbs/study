@@ -1,5 +1,7 @@
 .footer{
-    height: 380px;
+   height: 380px;
+   clear: both;
+   border:  1px solid #f0f0f0;
 }
 .footer_bg{
     margin-top: 28px;
@@ -74,10 +76,12 @@
     width: 62px;
     height: 52px;
     margin-top: -450px;
+    margin-left: 1600px;
     text-align: center;
     line-height: 52px;
     border-radius: 5px;
     cursor: pointer;
+    position: absolute;
 }
 .back:hover{background: #474646;}
 .up{
