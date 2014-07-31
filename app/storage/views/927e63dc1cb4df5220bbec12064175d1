@@ -1,0 +1,9 @@
+<?php foreach($posts as $post): ?>
+{{'<a href="www.baidu.com">' . $post->title . '</a>'}}
+<h3>文章标题:<?php echo $post->title; ?></h3>
+<h4>内容:<?php echo $post->content; ?></h4>
+<h4>创建时间:<?php echo $post->created_at; ?></h4>
+<h4>修改时间:<?php echo $post->updated_at; ?></h4>
+<h5>作者:<?php echo $post->user->username; ?></h5>
+<?php endforeach; ?>
+

@@ -4,7 +4,6 @@
  <link rel="stylesheet" href="{{asset('iduoqian')}}/css/footerCommon.css"/>
   <link rel="stylesheet" href="{{asset('iduoqian')}}/css/daikuangonglue.css"/>
 @stop
-
 @section('content')
 <div class="content_img">
     <img src="{{asset('iduoqian')}}/images/xiaofei.jpg" alt=""/>
@@ -22,31 +21,32 @@
                 <li><div  class="left_nav">经营贷款攻略</div></li>
                 </ul>
             </div>
+
             <div class="content_wen">
                 <ul>
-                    <li><img src="{{asset('iduoqian')}}/images/xiaofei01.jpg" alt=""/></li>
-                    <li><img src="{{asset('iduoqian')}}/images/xiaofei02.jpg" alt=""/></li>
-                    <li><img src="{{asset('iduoqian')}}/images/xiaofei03.jpg" alt=""/></li>
+                    @foreach($new_three_article as $key=>$item)
+                    <li><img src="{{$item->indeximage}}" title="{{$item->title}}" /></li>
+                    @endforeach
                 </ul>
                 <div class="content_word">
                      <div class="content_title">
                          <ul>
-                             <li><a href="">如何选择适宜的贷款期限？</a></li>
-                             <li><a href="">信用卡分期 一算吓一跳？</a></li>
-                             <li><a href="">银行卡和密码在手 钱为何被？</a></li>
+                             @foreach($new_three_article as $key=>$item)
+                             <li><a href="">{{mb_substr($item->title, 0, 20, 'utf-8')}}</a></li>
+                              @endforeach
                          </ul>
                      </div>
                      <div class="content_xi">
                          <ul>
-                             <li><a href="">选择多了，人民往往会不知所措，相信不少正在申请贷款的朋友，都会作此感受...</a></li>
-                             <li><a href="">选择多了，人民往往会不知所措，相信不少正在申请贷款的朋友，都会作此感受...</a></li>
-                             <li><a href="">选择多了，人民往往会不知所措，相信不少正在申请贷款的朋友，都会作此感受...</a></li>
+                            @foreach($new_three_article as $key=>$item)
+                             <li><a href="">{{mb_substr($item->description, 0, 80, 'utf-8')}}</a></li>
+                            @endforeach
                          </ul>
                          <div class="content_find">
                              <ul>
-                                 <li><a href="">查看更多>></a></li>
-                                 <li><a href="">查看更多>></a></li>
-                                 <li><a href="">查看更多>></a></li>
+                                  @foreach($new_three_article as $key=>$item)
+                                   <li><a href="">查看更多>></a></li>
+                                  @endforeach
                              </ul>
                          </div>
                      </div>
@@ -54,7 +54,7 @@
             </div>
             <div class="content_bao">
                 <div class="bao_img">
-                    <img src="{{asset('iduoqian')}}/images/xiaofei04.jpg" alt=""/>
+                    <img src="" alt=""/>
                     <div class="bao_right">
                         <a href=""><h4>公积金收益低贷款额度少 不如余额宝？</h4></a>
                         <div class="span">
@@ -116,7 +116,8 @@
                     </div>
                 </div>
             </div>
-            <div class="left_page">
+            {{$articles->links('paginate.mypagination')}}
+            <!-- <div class="left_page">
                  <button  class="left_up"><i class="fa fa-caret-left caret"></i>上一页</button>
                  <div class="page_one"><span >1</span></div>
                  <div class="page_two"><span >2</span></div>
@@ -124,7 +125,7 @@
                 <div class="page_dian"> <span>...</span></div>
                 <div class="page_all"> <span>123</span></div>
                 <div class="left_down"><button>下一页<i class="fa fa-caret-right right"></i></button></div>
-            </div>
+            </div> -->
         </div>
         <!--右边区域-->
         <div class="content_right">
