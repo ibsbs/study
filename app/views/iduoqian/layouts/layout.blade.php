@@ -2,7 +2,9 @@
         "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-    @yield('head')
+  
+    @section('head')
+    @show
 </head>
 <body>
 <!--头部区域-->

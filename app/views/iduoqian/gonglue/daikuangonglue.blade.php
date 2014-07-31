@@ -179,25 +179,25 @@
                    </div>
                </div>
             </div>
-            <div class="right_re">
+             <div class="right_re">
                 <p class="right_p"><span class="right_sp">|</span>热门TAG</p><br />
-                 <style>
-            .ad1{left:0px;top:27px;}
-            .ad2{left:0px;top:80px;}
-            .ad3{left:47px;top:0px;}
-            .ad4{left:47px;top:53px;}
-            .ad5{left:47px;top:106px;}
-            .ad6{left:94px;top:27px;}
-            .ad7{left:94px;top:80px;}
-            .ad8{left:94px;top:133px;}
-            .ad9{left:141px;top:0px;}
-            .ad10{left:141px;top:53px;}
-            .ad11{left:141px;top:106px;}
-            .ad12{left:188px;top:27px;}
-            .ad13{left:188px;top:80px;}
-        </style>
                 <div class="right_img">
-                    <div id="tags-layout"></div>
+                        <div id="tags-layout">
+                            <a href="javascript:;" class="cate-02" style="left:0px;top:27px;">服务</a>
+                            <a href="javascript:;" class="cate-04" style="left:0px;top:80px;">利率</a>
+                            <a href="javascript:;" class="cate-01" style="left:47px;top:0px;">信用卡</a>
+                            <a href="javascript:;" class="cate-03" style="left:47px;top:53px;">优惠</a>
+                            <a href="javascript:;" class="cate-02" style="left:47px;top:106px;">理财</a>
+                            <a href="javascript:;" class="cate-03" style="left:94px;top:27px;">金融</a>
+                            <a href="javascript:;" class="cate-01" style="left:94px;top:80px;">银行</a>
+                            <a href="javascript:;" class="cate-04" style="left:94px;top:133px;">改革</a>
+                            <a href="javascript:;" class="cate-04" style="left:141px;top:0px;">信贷</a>
+                            <a href="javascript:;" class="cate-02" style="left:141px;top:53px;">利率</a>
+                            <a href="javascript:;" class="cate-03" style="left:141px;top:106px;">攻略</a>
+                            <a href="javascript:;" class="cate-01" style="left:188px;top:27px;">贷款</a>
+                            <a href="javascript:;" class="cate-04" style="left:188px;top:80px;">汽车</a>
+                        </div>
+
                 </div>
             </div>
             <div class="right_zi">
