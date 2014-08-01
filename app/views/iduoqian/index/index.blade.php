@@ -1,4 +1,4 @@
-@extends('iduoqian.layouts.master_no_footer')
+@extends('iduoqian.layouts.master')
 @section('contents')
  <div class="content">
        <div class="content_all">

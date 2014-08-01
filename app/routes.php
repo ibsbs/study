@@ -62,7 +62,9 @@ Route::group(array('prefix'=>'admin'), function() {
 
 Route::group(array('prefix'=>'iduoqian'), function() {
     Route::get('', array('as'=>'index', 'uses'=>'Iduoqian\IndexController@showIndex'));
-    Route::get('gonglue', 'Iduoqian\GongLueController@showIndex');
+    //Route::get('gonglue', array('as'=>'show_gonglue' , 'Iduoqian\GongLueController@showIndex'));
+    Route::get('gonglue', array('as'=>'show_gonglue', 'uses' => 'Iduoqian\GongLueController@showIndex'));
+    
 });
 
 ################################################

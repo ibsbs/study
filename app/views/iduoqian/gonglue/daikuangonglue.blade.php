@@ -1,4 +1,4 @@
-@extends('iduoqian.layouts.master_has_footer')
+@extends('iduoqian.layouts.master')
 @section('head')
   @parent
  <link rel="stylesheet" href="{{asset('iduoqian')}}/css/footerCommon.css"/>
@@ -24,23 +24,29 @@
 
             <div class="content_wen">
                 <ul>
-                    @foreach($new_three_article as $key=>$item)
-                    <li><img src="{{$item->indeximage}}" title="{{$item->title}}" /></li>
-                    @endforeach
+                    @if(is_array($new_three_article))
+                      @foreach($new_three_article as $key=>$item)
+                      <li><img src="{{$item->indeximage}}" title="{{$item->title}}" /></li>
+                      @endforeach
+                    @endif
                 </ul>
                 <div class="content_word">
                      <div class="content_title">
                          <ul>
-                             @foreach($new_three_article as $key=>$item)
-                             <li><a href="">{{mb_substr($item->title, 0, 20, 'utf-8')}}</a></li>
-                              @endforeach
+                            @if(is_array($new_three_article))
+                               @foreach($new_three_article as $key=>$item)
+                               <li><a href="">{{mb_substr(strip_tags($item->title), 0, 20, 'utf-8')}}</a></li>
+                                @endforeach
+                              @endif
                          </ul>
                      </div>
                      <div class="content_xi">
                          <ul>
-                            @foreach($new_three_article as $key=>$item)
-                             <li><a href="">{{mb_substr($item->description, 0, 80, 'utf-8')}}</a></li>
-                            @endforeach
+                            @if(is_array($new_three_article))
+                              @foreach($new_three_article as $key=>$item)
+                               <li><a href="">{{mb_substr(strip_tags($item->description), 0, 70, 'utf-8')}}</a></li>
+                              @endforeach
+                            @endif
                          </ul>
                          <div class="content_find">
                              <ul>
@@ -52,71 +58,33 @@
                      </div>
                 </div>
             </div>
+            
+        
+          @foreach($articles as $key=>$item)
             <div class="content_bao">
                 <div class="bao_img">
-                    <img src="" alt=""/>
+                    <img src="" alt="" width="250px" height="159px"/>
                     <div class="bao_right">
-                        <a href=""><h4>公积金收益低贷款额度少 不如余额宝？</h4></a>
+                        <a href=""><h4>{{$item->title}}</h4></a>
                         <div class="span">
-                            <span class="bao_wenzi"><a href="">多钱网资讯：近日，网上有帖子《公积金？废了吧！》调侃公积金“收益率不可思议的低”。据该神贴计算，如果你每月的公积金是1000元，你一年下来能拿到多少利息？结论是22.75元。该神贴调侃，这就是一斤瘦肉的钱，也远低于理财神器余额宝约4%的收益率...</a></span>
+                            <span class="bao_wenzi"><a href="">{{$item->description}}</a></span>
                         </div>
                         <div class="bao_span">
-                            <span class="span_time">发布于：一小时前</span>
-                            <span class="span_qian">标签：<a href="">多钱网成都贷款</a></span>
+                            <span class="span_time">发布于：{{$item->pubdate}}</span>
+
+                            <span class="span_qian">标签：
+                              {{$item->keywords}}
+                            
+                           
                             <a href=""><input type="button" value="继续阅读" class="bao_input" /></a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="content_bao">
-                <div class="bao_img">
-                    <img src="{{asset('iduoqian')}}/images/xiaofei05.jpg" alt=""/>
-                    <div class="bao_right">
-                        <a href=""><h4>公积金收益低贷款额度少 不如余额宝？</h4></a>
-                        <div class="span">
-                            <span class="bao_wenzi"><a href="">多钱网资讯：近日，网上有帖子《公积金？废了吧！》调侃公积金“收益率不可思议的低”。据该神贴计算，如果你每月的公积金是1000元，你一年下来能拿到多少利息？结论是22.75元。该神贴调侃，这就是一斤瘦肉的钱，也远低于理财神器余额宝约4%的收益率...</a></span>
-                        </div>
-                        <div class="bao_span">
-                            <span class="span_time">发布于：一小时前</span>
-                            <span class="span_qian">标签：<a href="">多钱网成都贷款</a></span>
-                            <a href=""><input type="button" value="继续阅读" class="bao_input" /></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="content_bao">
-                <div class="bao_img">
-                    <img src="{{asset('iduoqian')}}/images/xiaofei06.jpg" alt=""/>
-                    <div class="bao_right">
-                        <a href=""><h4>公积金收益低贷款额度少 不如余额宝？</h4></a>
-                        <div class="span">
-                            <span class="bao_wenzi"><a href="">多钱网资讯：近日，网上有帖子《公积金？废了吧！》调侃公积金“收益率不可思议的低”。据该神贴计算，如果你每月的公积金是1000元，你一年下来能拿到多少利息？结论是22.75元。该神贴调侃，这就是一斤瘦肉的钱，也远低于理财神器余额宝约4%的收益率...</a></span>
-                        </div>
-                        <div class="bao_span">
-                            <span class="span_time">发布于：一小时前</span>
-                            <span class="span_qian">标签：<a href="">多钱网成都贷款</a></span>
-                            <a href=""><input type="button" value="继续阅读" class="bao_input" /></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="content_bao">
-                <div class="bao_img">
-                    <img src="{{asset('iduoqian')}}/images/xiaofei07.jpg" alt=""/>
-                    <div class="bao_right">
-                        <a href=""><h4>公积金收益低贷款额度少 不如余额宝？</h4></a>
-                        <div class="span">
-                            <span class="bao_wenzi"><a href="">多钱网资讯：近日，网上有帖子《公积金？废了吧！》调侃公积金“收益率不可思议的低”。据该神贴计算，如果你每月的公积金是1000元，你一年下来能拿到多少利息？结论是22.75元。该神贴调侃，这就是一斤瘦肉的钱，也远低于理财神器余额宝约4%的收益率...</a></span>
-                        </div>
-                        <div class="bao_span">
-                            <span class="span_time">发布于：一小时前</span>
-                            <span class="span_qian">标签：<a href="">多钱网成都贷款</a></span>
-                            <a href=""><input type="button" value="继续阅读" class="bao_input" /></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {{$articles->links('paginate.mypagination')}}
+          @endforeach
+     
+           
+            {{$articles->fragment('a')->appends(Input::except('page'))->links()}}
             <!-- <div class="left_page">
                  <button  class="left_up"><i class="fa fa-caret-left caret"></i>上一页</button>
                  <div class="page_one"><span >1</span></div>
@@ -248,3 +216,7 @@
 
 </script>
 @stop
+@section('footer')
+  @parent
+@stop
+
