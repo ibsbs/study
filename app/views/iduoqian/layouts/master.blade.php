@@ -9,6 +9,7 @@
     <script type="text/javascript" src="{{asset('iduoqian')}}/js/popup/layer.min.js"></script>
     <link rel="stylesheet" href="{{asset('iduoqian')}}/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="{{asset('iduoqian')}}/css/headCommon.css"/>
+     <link rel="stylesheet" href="{{asset('iduoqian')}}/css/footerCommon.css"/>
     <link rel="stylesheet" href="{{asset('iduoqian')}}/css/index.css"/>
     <link rel="stylesheet" href="{{asset('bootstrap')}}/js/bootstrap.js" />
     <link rel="stylesheet" href="{{asset('bootstrap')}}/css/bootstrap.css" />

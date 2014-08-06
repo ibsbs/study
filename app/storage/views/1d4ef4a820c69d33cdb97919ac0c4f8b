@@ -1,7 +1,6 @@
 <?php $__env->startSection('head'); ?>
   @parent
- <link rel="stylesheet" href="<?php echo asset('iduoqian'); ?>/css/footerCommon.css"/>
-  <link rel="stylesheet" href="<?php echo asset('iduoqian'); ?>/css/daikuangonglue.css"/>
+<link rel="stylesheet" href="<?php echo asset('iduoqian'); ?>/css/daikuangonglue.css"/>
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
 <div class="content_img">
@@ -13,11 +12,11 @@
         <div class="content_left">
             <div class="content_nav">
                 <ul>
-                <li><div class="left_nav">行业资讯</div></li>
-                <li><div  class="left_nav">买房贷款攻略</div></li>
-                <li><div  class="left_nav">购车贷款攻略</div></li>
-                <li><div  class="left_nav">消费贷款攻略</div></li>
-                <li><div  class="left_nav">经营贷款攻略</div></li>
+                <li><div <?php if(empty(Input::get('cid'))): ?> style=" background: #fff;border-bottom-color: #fff;border-top: 2px solid #ffa308;" <?php endif; ?> class="left_nav"><a href="<?php echo URL::to('gonglue'); ?>">行业资讯</a></div></li>
+                <li><div <?php if('3' === Input::get('cid')): ?> style=" background: #fff;border-bottom-color: #fff;border-top: 2px solid #ffa308;" <?php endif; ?>   class="left_nav"><a href="?page=1&cid=3">买房贷款攻略</a></div></li>
+                <li><div <?php if('4' === Input::get('cid')): ?> style=" background: #fff;border-bottom-color: #fff;border-top: 2px solid #ffa308;" <?php endif; ?> class="left_nav"><a href="?page=1&cid=4">购车贷款攻略</a></div></li>
+                <li><div <?php if('5' === Input::get('cid')): ?> style=" background: #fff;border-bottom-color: #fff;border-top: 2px solid #ffa308;" <?php endif; ?> class="left_nav"><a href="?page=1&cid=5">消费贷款攻略</a></div></li>
+                <li><div <?php if('6' === Input::get('cid')): ?> style=" background: #fff;border-bottom-color: #fff;border-top: 2px solid #ffa308;" <?php endif; ?> class="left_nav"><a href="?page=1&cid=6">经营贷款攻略</a></div></li>
                 </ul>
             </div>
 
@@ -83,7 +82,7 @@
           <?php endforeach; ?>
      
            
-            <?php echo $articles->fragment('a')->appends(Input::except('page'))->links(); ?>
+            <?php echo $articles->appends(Input::only('cid'))->links(); ?>
             <!-- <div class="left_page">
                  <button  class="left_up"><i class="fa fa-caret-left caret"></i>上一页</button>
                  <div class="page_one"><span >1</span></div>
@@ -168,31 +167,7 @@
 
                 </div>
             </div>
-            <div class="right_zi">
-                <p class="right_p"><span class="right_sp">|</span>热门资讯</p><br />
-                <ul>
-                    <li><a href="">公积金收益低贷款额度少 不如余额宝？</a></li>
-                    <li><a href="">外资小贷求解水土不服 消费贷款借线上破局</a></li>
-                    <li><a href="">定向降准显效 银行理财产品收益率年中难飙高</a></li>
-                    <li><a href="">上海金融谷投融资服务平台起航</a></li>
-                    <li><a href="">股转系统股权质押贷款活跃</a></li>
-                    <li><a href="">宜宾住房公积金贷款9.5亿 完成年计划73%</a></li>
-                    <li><a href="">英国将向印度提供10亿英镑基础设施贷款</a></li>
-                    <li><a href="">P2P网贷“麻烦”不断部分平台谋求转型</a></li>
-                    <li><a href="">央行要求提前支取罚息 贷基协存特权不再</a></li>
-                    <li><a href="">手机银行对个人理财的三个贡献</a></li>
-                    <li><a href="">民生银行获首批社区支行牌照</a></li>
-                    <li><a href="">微信增转账功能 直接叫板支付宝霸主地位</a></li>
-                    <li><a href="">互联网金融产品走红广州金交会</a></li>
-                    <li><a href="">银行间市场重启丙类户 定位北金所</a></li>
-                    <li><a href="">ATM机取出假币 银行可追溯源头</a></li>
-                    <li><a href="">货币政策传导机制待完善</a></li>
-                    <li><a href="">在华外资银行争夺中高端信用卡市场</a></li>
-                    <li><a href="">超四成小微企业不找银行贷款</a></li>
-                    <li><a href="">南充加强无贷户小微企业融资培育工作</a></li>
-                    <li><a href="">亚洲信用体系建设高峰论坛在京举办</a></li>
-                </ul>
-            </div>
+            <?php echo $__env->make('iduoqian.hot_consult', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
         </div>
     </div>
 </div>

@@ -1,0 +1,9 @@
+
+<div class="right_zi">
+    <p class="right_p"><span class="right_sp">|</span>热门资讯</p><br />
+    <ul>
+        <?php foreach($news as $key=>$value): ?>
+        <li><a href=""><?php echo $value->title; ?></a></li>
+        <?php endforeach; ?>
+    </ul>
+</div>
