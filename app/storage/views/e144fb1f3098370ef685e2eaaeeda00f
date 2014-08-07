@@ -1,3 +1,7 @@
+<?php $__env->startSection('head'); ?>
+  @parent
+  <link rel="stylesheet" href="<?php echo asset('iduoqian'); ?>/css/index.css"/>
+<?php $__env->stopSection(); ?>
 <?php $__env->startSection('contents'); ?>
  <div class="content">
        <div class="content_all">

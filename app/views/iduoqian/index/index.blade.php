@@ -1,4 +1,8 @@
 @extends('iduoqian.layouts.master')
+@section('head')
+  @parent
+  <link rel="stylesheet" href="{{asset('iduoqian')}}/css/index.css"/>
+@stop
 @section('contents')
  <div class="content">
        <div class="content_all">

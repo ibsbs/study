@@ -8,7 +8,8 @@
 </head>
 <body>
 <!--头部区域-->
-  @yield('banner')
+  @section('banner')
+  @show
   @yield('contents')
 </body>
 

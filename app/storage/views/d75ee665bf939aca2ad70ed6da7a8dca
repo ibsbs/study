@@ -8,7 +8,8 @@
 </head>
 <body>
 <!--头部区域-->
-  <?php echo $__env->yieldContent('banner'); ?>
+  <?php $__env->startSection('banner'); ?>
+  <?php echo $__env->yieldSection(); ?>
   <?php echo $__env->yieldContent('contents'); ?>
 </body>
 

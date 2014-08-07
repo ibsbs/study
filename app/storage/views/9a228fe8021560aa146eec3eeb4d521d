@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="<?php echo asset('iduoqian'); ?>/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="<?php echo asset('iduoqian'); ?>/css/headCommon.css"/>
      <link rel="stylesheet" href="<?php echo asset('iduoqian'); ?>/css/footerCommon.css"/>
-    <link rel="stylesheet" href="<?php echo asset('iduoqian'); ?>/css/index.css"/>
+    
     <link rel="stylesheet" href="<?php echo asset('bootstrap'); ?>/js/bootstrap.js" />
-    <link rel="stylesheet" href="<?php echo asset('bootstrap'); ?>/css/bootstrap.css" />
+   <!--  <link rel="stylesheet" href="<?php echo asset('bootstrap'); ?>/css/bootstrap.css" /> -->
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('banner'); ?>
 <div class="header">
@@ -44,6 +44,7 @@
     </div>
 </div>
 <?php $__env->stopSection(); ?>
+
 <?php $__env->startSection('contents'); ?>
 <div class="bg">
     <?php $__env->startSection('content'); ?>

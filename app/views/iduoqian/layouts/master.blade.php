@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="{{asset('iduoqian')}}/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="{{asset('iduoqian')}}/css/headCommon.css"/>
      <link rel="stylesheet" href="{{asset('iduoqian')}}/css/footerCommon.css"/>
-    <link rel="stylesheet" href="{{asset('iduoqian')}}/css/index.css"/>
+    
     <link rel="stylesheet" href="{{asset('bootstrap')}}/js/bootstrap.js" />
-    <link rel="stylesheet" href="{{asset('bootstrap')}}/css/bootstrap.css" />
+   <!--  <link rel="stylesheet" href="{{asset('bootstrap')}}/css/bootstrap.css" /> -->
 @stop
 @section('banner')
 <div class="header">
@@ -45,6 +45,7 @@
     </div>
 </div>
 @stop
+
 @section('contents')
 <div class="bg">
     @section('content')
