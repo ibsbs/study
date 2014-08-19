@@ -35,9 +35,10 @@ class GongLueController extends \BaseController
         return View::make('iduoqian.gonglue.daikuangonglue')
             ->with(
                 array(
-                    'news' => $news,
-                    'articles'=>$articles, 
-                    'new_three_article'=>$new_three_article
+                    'news'              => $news,
+                    'articles'          =>$articles, 
+                    'new_three_article' =>$new_three_article,
+                    'cid'               => $cid
                 ));
     }
 

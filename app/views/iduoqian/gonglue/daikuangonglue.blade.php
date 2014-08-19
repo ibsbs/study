@@ -13,11 +13,11 @@
         <div class="content_left">
             <div class="content_nav">
                 <ul>
-                <li><div @if(empty(Input::get('cid'))) style=" background: #fff;border-bottom-color: #fff;border-top: 2px solid #ffa308;" @endif class="left_nav"><a href="{{URL::to('gonglue')}}">行业资讯</a></div></li>
-                <li><div @if('3' === Input::get('cid')) style=" background: #fff;border-bottom-color: #fff;border-top: 2px solid #ffa308;" @endif   class="left_nav"><a href="?page=1&cid=3">买房贷款攻略</a></div></li>
-                <li><div @if('4' === Input::get('cid')) style=" background: #fff;border-bottom-color: #fff;border-top: 2px solid #ffa308;" @endif class="left_nav"><a href="?page=1&cid=4">购车贷款攻略</a></div></li>
-                <li><div @if('5' === Input::get('cid')) style=" background: #fff;border-bottom-color: #fff;border-top: 2px solid #ffa308;" @endif class="left_nav"><a href="?page=1&cid=5">消费贷款攻略</a></div></li>
-                <li><div @if('6' === Input::get('cid')) style=" background: #fff;border-bottom-color: #fff;border-top: 2px solid #ffa308;" @endif class="left_nav"><a href="?page=1&cid=6">经营贷款攻略</a></div></li>
+                <li><div @if(empty($cid)) style=" background: #fff;border-bottom-color: #fff;border-top: 2px solid #ffa308;" @endif class="left_nav"><a href="{{URL::to('gonglue')}}">行业资讯</a></div></li>
+                <li><div @if('3' === $cid) style=" background: #fff;border-bottom-color: #fff;border-top: 2px solid #ffa308;" @endif   class="left_nav"><a href="?page=1&cid=3">买房贷款攻略</a></div></li>
+                <li><div @if('4' === $cid) style=" background: #fff;border-bottom-color: #fff;border-top: 2px solid #ffa308;" @endif class="left_nav"><a href="?page=1&cid=4">购车贷款攻略</a></div></li>
+                <li><div @if('5' === $cid) style=" background: #fff;border-bottom-color: #fff;border-top: 2px solid #ffa308;" @endif class="left_nav"><a href="?page=1&cid=5">消费贷款攻略</a></div></li>
+                <li><div @if('6' === $cid) style=" background: #fff;border-bottom-color: #fff;border-top: 2px solid #ffa308;" @endif class="left_nav"><a href="?page=1&cid=6">经营贷款攻略</a></div></li>
                 </ul>
             </div>
 
