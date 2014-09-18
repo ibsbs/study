@@ -22,7 +22,6 @@
 | 放松的感觉好极了。
 |
 */
-
 require __DIR__.'/../bootstrap/autoload.php';
 
 /*
